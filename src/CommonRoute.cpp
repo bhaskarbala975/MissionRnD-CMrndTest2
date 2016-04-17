@@ -49,7 +49,23 @@ First Island in DTD ie 'D' occurs alphabatically before 'H' and 'Z')
 #include <stdio.h>
 
 
-char * find_common_route(char * hacklist, char *codelist, int *cost){
+char * find_common_route(char * hacklist, char *codelist, int *cost)
+{
+	int i = 0,j=0;
+	char result[100];
+	if (hacklist==NULL||codelist==NULL)
 	return NULL;
+	/*here my idea is to calculate largest common subsequence of two strings and store them in 2D array for 
+	which string will the cost of the string  be minimum i will return the string pointer*/
+	while (hacklist[i] != '\0'&& codelist[i] != '\0')
+	{
+		
+		if (hacklist[i] == codelist[i])
+		{
+			i++;
+			result[j] = hacklist[i];
+			j++;
+	}
+
 }
 
