@@ -56,7 +56,7 @@ char * find_common_route(char * hacklist, char *codelist, int *cost)
 	if (hacklist==NULL||codelist==NULL)
 	return NULL;
 	/*here my idea is to calculate largest common subsequence of two strings and store them in 2D array for 
-	which string will the cost of the string  be minimum i will return the string pointer*/
+	which string will the cost of the string  be minimum i will return the string pointer value*/
 	while (hacklist[i] != '\0'&& codelist[i] != '\0')
 	{
 		
